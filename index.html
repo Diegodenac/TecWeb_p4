@@ -3,52 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 5</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Santo Grial Elementos Semánticos</title>
 </head>
 <body>
-    <h3>Ejercicio Santo Grial con Elementos Semánticos</h3>
-    <p></p>
     <header>
-        <h1>Elementos Semánticos</h1>
-    </header>
-    <h2>encabezados &lt;hn&gt; </h2>
-    <p>Existen 6 tipos de encabezados que se ordenan jerárquicamente</p>
-    <article>
-        <header><h2>&lt;article&gt;</h2></header>
-        <p>Este elemento encierra contenido independiente del resto de la página</p>
-    </article>
-    <article>
-        <header><h2>&lt;section&gt;</h2></header>
-        <p>Este elemento subdivide el contenido del articulo</p>
-        <section>
-            <p>>Esta es una sección</p>
-        </section>
-        <section>
-            <p>>Esta es otra sección</p>
-        </section>
-    </article>
-    <article>
-        <header><h2>&lt;nav&gt;</h2></header>
-        <p>Este elemento es para la navegación en el sitio Web</p>
         <nav>
-            <a href=""></a>
+            <ul>
+                <li><a href="#">Hey! I'm link 1</a></li>
+                <li><a href="#">Hey! I'm link 2</a></li>
+                <li><a href="#">Hey! I'm link 3</a></li>
+            </ul>
         </nav>
-    </article>
-    <article>
-        <header><h2>&lt;aside&gt;</h2></header>
-        <p>Este elemento es para el contenido que no relaciona directamente con el documento web</p>
-        <aside>
-            <p>Esto es un aside</p>
-        </aside>
-    </article>
-    <footer>
-        <header><h2>&lt;footer&gt;</h2></header>
-        <p>Elemento del final de una página weh, representa pie de página de su ancestro de la categoria SECTIONING más cercano</p> 
-    </footer>
+    </header>
+    <aside id="aside-left">
+        Hey! I'm aside-left
+    </aside>
+
     <main>
-        <header><h2>&lt;main&gt;</h2></header>
-        <p>Contenido principal</p>
-        <p>Solo puede ser contenido por html, body, form</p>
+        <article>
+            <section>
+                <h2>Hey! I'm in seccion-1</h2>
+                <p>Lorem ipsum, dolor sit <span class="keyword">amet</span> consectetur adipisicing elit. Illo eius ab est aut, tempora explicabo nulla atque corporis. Nam incidunt ea dicta officiis assumenda voluptate nobis ad consequatur totam eum.</p>
+            </section>
+            <section>
+                <h2>Hey! I'm in seccion-2</h2>
+                <p>Lorem ipsum, dolor sit <span class="keyword">amet</span> consectetur adipisicing elit. Illo eius ab est aut, tempora explicabo nulla atque corporis. Nam incidunt ea dicta officiis assumenda voluptate nobis ad consequatur totam eum.</p>
+            </section>
+        </article>
     </main>
+
+    <aside id="aside-right">
+        Hey! I'm aside-right
+    </aside>
+    <footer>
+        Hey! I'm in footer
+    </footer>
 </body>
 </html>
